@@ -1,0 +1,13 @@
+## Put comments here that give an overall description of what your
+## functions do
+
+## Write a short comment describing this function
+
+makeCacheMatrix <- function(x = matrix()) {
+      cacheSolve = function() 
+        print(solve(x))
+        x <- rbind(c(1, .45), c(.45,1)) ##(A)
+        print(x)
+        cacheSolve() }
+makeCacheMatrix()
+ 
